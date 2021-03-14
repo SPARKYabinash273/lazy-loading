@@ -1,0 +1,141 @@
+//colors
+$offer-green: #388e3c;
+$spec: #878787;
+$black: #000000;
+//font size
+
+$text-size8: 0.8rem;
+$text-size9: 0.9rem;
+$text-size10: 1rem;
+$text-size11: 1.1rem;
+$text-size12: 1.2rem;
+$text-size14: 1.4rem;
+$text-size16: 1.6rem;
+$text-size18: 1.8rem;
+$text-size20: 2rem;
+$text-size24: 2.4rem;
+$text-size25: 2.5rem;
+$text-size30: 3rem;
+$text-size32: 3.2rem;
+$text-size38: 3.8rem;
+$text-size48: 4.8rem;
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  height: 45rem;
+  border-radius: 0.2rem;
+  border: 0.3px solid #cccccc61;
+  padding: 1.25rem;
+  margin: 1rem 0rem;
+  .card-like-container {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 1px 4px 0 #0000001c;
+    padding: 9px 12px 12px 9px;
+    background: #fff;
+    img {
+      width: 16px;
+      height: 16px;
+      vertical-align: text-top;
+    }
+  }
+  .card-img {
+    height: 280px;
+    width: 200px;
+    place-self: center;
+    object-fit: contain;
+  }
+  .card-body {
+    .card-title {
+      font-size: $text-size14;
+      color: $black;
+      p {
+        margin-bottom: 0.25rem;
+      }
+    }
+    .card-spec {
+      font-size: $text-size12;
+      color: $spec;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+    .rating-container {
+      margin-bottom: 0.75rem;
+    }
+    .card-rating {
+      line-height: normal;
+      display: inline-block;
+      color: #fff;
+      padding: 0.2rem 0.4rem 0.2rem 0.6rem;
+      border-radius: 3px;
+      font-weight: 500;
+      font-size: $text-size14;
+      vertical-align: middle;
+      background-color: #388e3c;
+      img {
+        width: 10px;
+        height: 15px;
+        margin: 0 0.5rem;
+        vertical-align: top;
+        margin-top: 0.2rem;
+      }
+    }
+    .review-count {
+      padding-left: 8px;
+      font-weight: 500;
+      color: #878787;
+    }
+    .assure-icon {
+      padding-left: 8px;
+    }
+    .price-container {
+      display: flex;
+      flex-flow: row wrap;
+      padding-bottom: 1rem;
+      .price-tag {
+        padding-right: 0.8rem;
+      }
+      .mrp {
+        text-decoration: line-through;
+        font-size: 13px;
+        color: #878787;
+        align-self: center;
+      }
+      .discount {
+        display: inline-block;
+        font-size: $text-size16;
+        font-weight: 500;
+        color: #212121;
+        align-self: center;
+
+      }
+      .offer {
+        color: $offer-green;
+        font-size: $text-size12;
+        letter-spacing: -0.2px;
+        font-weight: 500;
+        align-self: center;
+      }
+    }
+  }
+}
+
+.card:hover {
+  box-shadow: 0 3px 16px 0 #0000001c;
+  padding: 16px;
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out;
+}
