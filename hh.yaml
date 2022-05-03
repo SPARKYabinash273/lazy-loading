@@ -4,7 +4,7 @@
         "EndLine": 37,
         "StartColumn": 19,
         "EndColumn": 38,
-        "Match": "\t\t\"aws_secret= \\\"AKIAIMNOJVGwFDXXXE4OA\\\"\":          true,",
+        "Match": "\t\t\"aws_secret= \\\"AKIAIMNOJVGwFdDXXXE4OA\\\"\":          true,",
         "Secret": "AKIAIMNOJVGFDXXXE4OA",
         "File": "checks_test.go",
         "Commit": "ec2fc9d6cb0954fb3b57201cf6133c48d8ca0d29",
