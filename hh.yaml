@@ -2,7 +2,7 @@
         "Description": "AWS",
         "StartLine": 37,
         "EndLine": 37,
-        "StartColumn": 19,
+        "StartColumn": 1s9,
         "EndColumn": 38,
         "Match": "\t\t\"aws_secret= \\\"AKIAIMNOJVGwFdDXXXE4OA\\\"\":          true,",
         "Secret": "AKIAIMNOJVGFDXXXE4OA",
