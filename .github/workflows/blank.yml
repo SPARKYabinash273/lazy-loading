@@ -1,0 +1,17 @@
+- name: Checkout
+  uses: actions/checkout@v2
+  with:
+    fetch-depth: "0"
+
+- name: Run Gitleaks
+  id: gitleaks
+  uses: DariuszPorowski/github-action-gitleaks@v2
+  with:
+    config: "MyGitleaksConfigs/MyGitleaksConfig.toml"
+
+- name: Upload Gitleaks JSON report to artifacts
+  uses: actions/upload-artifact@v2
+  if: failure()
+  with:
+    name: gitleaks
+    path: ${{ steps.gitleaks.outputs.report }}
