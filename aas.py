@@ -1,0 +1,5 @@
+username=Abinash
+password=sparky@123
+
+GITHUB_TOKEN=jnadfanflk1gj1m
+AWS_KEY=kndjfnlikdgsfh4fjf45jfg
