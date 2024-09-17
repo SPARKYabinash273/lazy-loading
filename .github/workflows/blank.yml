@@ -1,0 +1,14 @@
+uses: google/secrets-sync-action
+  with:
+    SECRETS: |
+      ^FOO$
+      ^GITHUB_.*
+    REPOSITORIES: |
+      ${{github.repository}}
+    DRY_RUN: true
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN_SECRETS }}
+    GITHUB_API_URL: ${{ secrets.CUSTOM_GITHUB_API_URL }}
+    CONCURRENCY: 10
+  env:
+    FOO: ${{github.run_id}}
+    FOOBAR: BAZ
